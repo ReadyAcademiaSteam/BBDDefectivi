@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyARCppzYMZpT1XdRnFA-NtZGSdjGJ_sDbE",
+      authDomain: "base-secreta-efectiviwonders.firebaseapp.com",
+      databaseURL: "https://base-secreta-efectiviwonders.firebaseio.com",
+      projectId: "base-secreta-efectiviwonders",
+      storageBucket: "base-secreta-efectiviwonders.appspot.com",
+      messagingSenderId: "564942256587",
+      appId: "1:564942256587:web:8e5312e612697e1cb85e4e",
+      measurementId: "G-47KRTE4ED4"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var database = firebase.database();
+
+    </script>
+    <script src="js/bbdd.js"></script>
+  </head>
+  <body>
+
+<h1>TEST</h1>
+
+    <body>
+
+      <form>
+        Nombre Canción:<br>
+        <input id="nombrecancion" type="text" name="ncancion" value="Plug in Baby">
+        <br>
+        Grupo:<br>
+        <input id="nombregrupo" type="text" name="ngrupo" value="Muse">
+        <br><br>
+        <input id="duracionminutos" type="number" name="nmin" value="0" min="0" max="59" ><input id="duracionsegundos"  type="number" name="nseg" value="0" min="0" max="59">
+        <button onclick="escribeCancion()">Enviar</button>
+      </form>
+      <p id="datos">Hola </p>
+    </body>
+
+</html>
